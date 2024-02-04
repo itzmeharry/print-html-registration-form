@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+     <section class="container" id="mySec">
+        <header>Registration Form</header>
+        <form action="#" class="form" id="myForm">
+            <div class="input-box">
+                <label for="">Full Name</label>
+                <input type="text" name="Full Name" placeholder="Enter the full name" required>
+            </div>
+            <div class="input-box">
+                <label for="">Email Address</label>
+                <input type="email" name="Email Address" placeholder="Enter the email address" required>
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label for="">Phone Number</label>
+                    <input type="number" name="Phone Number" placeholder="Enter the phone number" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Birth Date</label>
+                    <input type="date" name="Birth Date" placeholder="Enter the birth date" required>
+                </div>
+            </div>
+
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender">
+                        <label for="">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender">
+                        <label for="">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender">
+                        <label for="">Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box address">
+                <label for="">Address</label>
+                <input type="text" placeholder="Enter the street address" required>
+                <input type="text" placeholder="Enter the street address line 2" required>
+                <div class="column">
+                    <div class="select-box">
+                        <select>
+                            <option value="" hidden>Country</option>
+                            <option value="">America</option>
+                            <option value="">India</option>
+                            <option value="">Japan</option>
+                            <option value="">Nepal</option>
+                        </select>
+                    </div>
+                    <input type="" placeholder="Enter you city" required>
+                </div>
+                <div class="column">
+                  <input type="text" placeholder="Enter you region" required>
+                  <input type="number" placeholder="Enter postal code" required>
+                </div>
+            </div>
+            <button id="myBtn" onclick="window.print()">Submit</button>
+        </form>
+     </section>
+     <script>
+        
+        // function pagePrint(myForm){
+        //     var printdata = document.getElementById("myForm");
+        //     newwin=window.open("");
+        //     newwin.document.write(printdata.outerHTML);
+        //     newwin.print();
+        //     newwin.close();
+        // }
+    //     function printDiv(secName) {
+    //         var inputID = document.getElementsByTagName('input');
+    //         console.log(inputID.value);
+
+    //         alert('Click Here To Print This Form');
+    //     var printContents = document.getElementById(secName).innerHTML;
+    //     w=window.open();
+    //     w.document.write(printContents);
+    //     w.print();
+    //     w.close();
+    // }
+
+        //  function printDiv(divName) {
+        //  //alert('s');
+        //  var printContents = '<section class="container" id="print-content">';
+        //   var inputs, index;
+        
+        // inputs = document.getElementsByTagName('input');
+        // for (index = 0; index < inputs.length - 1; ++index) {
+        
+        //    var fieldName = inputs[index].name;
+        //    var fieldValue = inputs[index].value;
+        
+        //   printContents +='<label>'+fieldName+'</label>';
+        //   printContents +='<input>'+fieldValue+'</input>';
+        // }        
+        //  w=window.open();
+        //  w.document.write(printContents);
+        //  w.print();
+        //  w.close();
+        // }
+     </script>
+</body>
+</html>

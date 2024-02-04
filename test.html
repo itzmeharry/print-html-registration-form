@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  $('#submit').click(function () {
+  var fieldId = "field100";
+  var chars = $('#try1').val();
+  $('#veewom').html(chars);
+  var d3 = $('[name=' + fieldId + ']:enabled').val();
+
+  diff1 = "";
+  if (d3) {
+    diff = d3;
+  }
+
+  var source = $('#print').html();
+  doc.fromHTML(source, 15, 15, {
+    'width': 170,
+    'elementHandlers': specialElementHandlers
+  });
+  doc.save('pdf-version.pdf');
+});
+</script>
+<body>
+  <input type="text" id="try1" placeholder="Enter Name Here">
+  <div id="print">
+      <h3>Welcome To Veewom</h3>
+      <p>This is a Sample Pararaph</p>
+      <p id="veewom"></p>
+      <button type="submit" id="submit">Submit</button>
+  </div>
+
+
+</body>
+</html>
